@@ -17,6 +17,6 @@ export class LoginComponent implements OnInit {
   }
 
   onLogin(em: string, pass: string) {
-    this.router.navigate(['/dash']);
+    this.router.navigate(['/dash', em]);
   }
 }
