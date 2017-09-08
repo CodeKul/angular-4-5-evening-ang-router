@@ -6,7 +6,7 @@
   <input #pass type="password" id="inputPassword" class="form-control" placeholder="Password" required>
 
   <div>
-    <a [routerLink]="['forpass']">Forget Password ?</a>
+    <a [routerLink]="['forpass']" [queryParams]="{to : 'fb'}">Forget Password ?</a>
   </div>
   <button class="btn btn-lg btn-primary btn-block" type="button" (click)="onLogin(em.value,pass.value)">Sign in</button>
 </form>

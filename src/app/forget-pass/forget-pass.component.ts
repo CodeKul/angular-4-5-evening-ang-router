@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ForgetPassComponent implements OnInit {
 
-  constructor() { }
+  sm: string;
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit() {
+    this.router.routerState.root.queryParams.subscribe(
+      quPrm => {
+        this.sm = `../../assets/${quPrm['to']}.svg`;
+      }
+    );
   }
-
 }
