@@ -1,3 +1,4 @@
+import { DashGuardService } from './dash/dash-guard.service';
 import { MyRoutingModule } from './app.router';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
@@ -21,7 +22,7 @@ import { ForgetPassComponent } from './forget-pass/forget-pass.component';
     MyRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [DashGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
