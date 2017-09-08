@@ -9,6 +9,18 @@
 </div>
 <div class="row"> 
   <div class="col-md-12">
-    <input type="text" [(ngModel)]="badge"><a [routerLink]="['/dash',badge]">View Profile</a>
+    <input type="text" [(ngModel)]="badge"><a [routerLink]="['/dash',badge]" [routerLinkActive]="'myLink'">View Profile</a>
+  </div>
+</div>
+
+<div class="row"> 
+  <div class="col-md-12">
+    <input type="text" [(ngModel)]="badge"><a [routerLink]="['/xyz',badge]" [routerLinkActive]="'myLink'">View Profile</a>
+  </div>
+</div>
+
+<div class="row"> 
+  <div class="col-md-12">
+    <input type="text" [(ngModel)]="badge"><a [routerLink]="['/pqr',badge]" [routerLinkActive]="'myLink'">View Profile</a>
   </div>
 </div>
